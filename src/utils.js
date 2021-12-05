@@ -76,6 +76,7 @@ export function handleGetCompoents(code) {
     regComponent &&
     regComponent.map((w) =>
       w
+        .replace(/[a-zA-z-.]+:/, '')
         .replace(/\n*/g, "")
         .replace(/\s*/g, "")
         .replace(/{/, "")

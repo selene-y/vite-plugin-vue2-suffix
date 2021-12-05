@@ -1,16 +1,19 @@
 <template>
   <div class="block">
     <ComponentA msg="this is a A component" />
+    <B />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import ComponentA from './components/ComponentA'
+import ComponentB from './components/ComponentB'
 
 export default {
   components:{
-    ComponentA
+    ComponentA,
+    B: ComponentB
   }
 }
 </script>
